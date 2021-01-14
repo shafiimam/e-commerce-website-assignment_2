@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!--bootstrap css-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!--custom css-->
@@ -16,43 +21,316 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="container">
+    <header class="container-fluid">
       <!--navbar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
           <a class="navbar-brand" href="#"
-            ><img class="w-75" src="icons/Logo.png" alt=""
+            ><img
+              src="icons/Logo.png"
+              alt=""
+              class="img-fluid"
+              style="width: 290px; height: 39px"
           /></a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-            </ul>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav navbar-roboto-font">
+              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#product">Product</a>
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Contact Us</a>
+            </div>
           </div>
         </div>
       </nav>
+      <!--banner-->
+      <section class="container-fluid">
+        <div class="row gx-5 rounded mt-5 p-5 d-flex flex-wrap-reverse">
+          <div class="col-lg-6 mb-5">
+            <img src="photos/Group 33092.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-lg-6 mt-5 banner-left">
+            <h1 class="colored-font">NIKE REACT</h1>
+            <h1>INFINITY RUN 2</h1>
+            <p>Run infinitely with new nike inifnity run 2!!</p>
+            <a href="" class="custom-button"
+              ><img id="cart-icon" src="icons/shopping-cart 1.png" alt="" />Buy
+              Now</a
+            >
+          </div>
+        </div>
+      </section>
     </header>
+    <!--main section-->
+    <main class="container" id="product">
+      <!--shoes section-->
+      <section class="mt-5 container" id="shoes">
+        <h3 class="custom-bebas-neue-font">Casual Shoes</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card penguin-card rounded-border rounded-border">
+              <div class="custom-background">
+                <img
+                  src="photos/nike shoe.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Nike Shoe</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
+                  a.
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between penguin-card-footer"
+              >
+                <h2 class="colored-font price-font">234$</h2>
+                <a href="" class="custom-button"
+                  ><img
+                    id="cart-icon"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card penguin-card rounded-border">
+              <div class="custom-background">
+                <img
+                  src="photos/snakers basketball shoe.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sneakers Skate Shoe</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dicta, minima?
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between penguin-card-footer"
+              >
+                <h2 class="colored-font price-font">234$</h2>
+                <a href="" class="custom-button"
+                  ><img
+                    id="cart-icon"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card penguin-card rounded-border">
+              <div class="custom-background">
+                <img
+                  src="Photos/sneakers skate shoe.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Snakers Basketball Shoe</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Maxime, quos?
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between penguin-card-footer"
+              >
+                <h2 class="colored-font price-font">234$</h2>
+                <a href="" class="custom-button"
+                  ><img
+                    id="cart-icon"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--formal shoes-->
+      <section class="container my-5" id="formal_shoes">
+        <h3 class="custom-bebas-neue-font">Formal Shoes</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card penguin-card rounded-border">
+              <div class="custom-background">
+                <img
+                  src="photos/prestige high  cut.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Prestige HIgh Cut Leather</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
+                  a.
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between penguin-card-footer"
+              >
+                <h2 class="colored-font price-font">234$</h2>
+                <a href="" class="custom-button"
+                  ><img
+                    id="cart-icon"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card penguin-card rounded-border">
+              <div class="custom-background">
+                <img src="photos/slip on.png" class="card-img-top" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Slip On Formal Shoes</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dicta, minima?
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between penguin-card-footer"
+              >
+                <h2 class="colored-font price-font">234$</h2>
+                <a href="" class="custom-button"
+                  ><img
+                    id="cart-icon"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card penguin-card rounded-border">
+              <div class="custom-background">
+                <img
+                  src="Photos/slip on 2.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Slip ON Formal Shoes</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Maxime, quos?
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between penguin-card-footer"
+              >
+                <h2 class="colored-font price-font">234$</h2>
+                <a href="" class="custom-button"
+                  ><img
+                    id="cart-icon"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--motto section-->
+      <section class="container my-5">
+        <div class="row motto">
+          <div class="col-md-5 ps-5">
+            <div class="row p-2 mt-3 motto-title">
+              <div class="col-md-4 pe-4">
+                <img
+                  src="icons/image 13.png"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="col-md-8">
+                <h3>Free Exchange</h3>
+                <p>One of the many reason you can shop with peace of mind</p>
+              </div>
+            </div>
+            <div class="row p-2 mt-3 motto-title">
+              <div class="col-md-4 pe-4">
+                <img
+                  src="icons/image 12.png"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="col-md-8">
+                <h3>Find The Perfect Fit</h3>
+                <p>
+                  Everybody is different.which is why we offer styles for
+                  everybody
+                </p>
+              </div>
+            </div>
+            <div class="row p-2 mt-3 motto-title">
+              <div class="col-md-4 pe-4">
+                <img
+                  src="icons/image 14.png"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="col-md-8">
+                <h3>Contact our seller</h3>
+                <p>
+                  They are here to help ypu. That;s quite literally what we pay
+                  them for
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 mt-5 motto-img">
+            <img src="icons/XMLID 1.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </section>
+      <section class="contact container">
+        <div class="address">
+          <h1>Contact US</h1>
+          <h2>Dhaka,1200</h2>
+          <h4>email@penguin.com</h4>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <strong>&copy.2020 penguin ecommerce.All rights reserved</strong>
+    </footer>
     <!--bootstrap js bundle-->
     <script src="js/bootstrap.min.js"></script>
   </body>

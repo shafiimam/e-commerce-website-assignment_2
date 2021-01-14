@@ -1,0 +1,177 @@
+/* custom nav */
+.custom-background {
+  background-color: #fff9f4;
+}
+/* roboto font and position */
+.navbar-roboto-font > a {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #3c3c3c;
+  line-height: 24px;
+  margin: 22px 28px;
+}
+/* custom fonts */
+.navbar-roboto-font {
+  margin-left: 400px;
+}
+.h3-bebas-neue-font {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+/* colored font */
+.colored-font {
+  color: #fa804c;
+}
+/* price */
+.price-font {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42px;
+  margin-left: 7px;
+}
+/* left banner */
+.banner-left h1 {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-size: 80px;
+}
+.banner-left {
+  padding-left: 140px;
+}
+.banner-left p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px;
+}
+/* custom button for buy now */
+.custom-button {
+  text-decoration: none;
+  color: white;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 14px 32px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(15, 46, 219, 0.726),
+    rgb(6, 132, 235)
+  );
+  border-radius: 6px;
+}
+.custom-button:hover {
+  background-image: linear-gradient(180deg, #fa804c, #c54927);
+  color: #ffff;
+}
+#cart-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+/* custom card */
+.penguin-card {
+  height: 550px;
+  width: 370px;
+  border: 0;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.rounded-border {
+  border-radius: 20px;
+}
+.custom-background {
+  height: 340px;
+  width: 90%;
+  background-color: #f1f1f1;
+  margin-top: 18px;
+  margin-left: 19px;
+  border-radius: 20px;
+}
+.custom-background > img {
+  height: 290px;
+  width: 290px;
+  margin-top: 30px;
+  margin-left: 34px;
+  transition: transform 0.5s ease-in-out;
+}
+#formal_shoes .custom-background img {
+  height: 290px;
+  width: 290px;
+  margin-top: 25px;
+  margin-left: 22px;
+  transition: transform 0.5s ease-in-out;
+}
+/* adding transition effect */
+.custom-background > img:hover {
+  transform: rotate(30deg) scale(1.3);
+}
+.custom-background > img:last-child:hover {
+  transform: rotate(30deg) scale(1.1);
+}
+#formal_shoes .custom-background img:hover {
+  transform: scale(1.2);
+}
+/* custom-footer */
+.penguin-card-footer {
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
+}
+/* motto */
+.motto {
+  margin-top: 130px;
+}
+.motto-title {
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.motto-title > div > img {
+  border: none;
+}
+.contact {
+  text-align: center;
+  height: 500px;
+  background-image: url(/photos/contact.jpg);
+  background-size: cover;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.address {
+  padding-top: 200px;
+}
+footer {
+  font-family: roboto;
+  font-size: 16px;
+  text-align: center;
+}
+/* media query for responsiveness */
+@media (max-width: 768px) {
+  .banner-left {
+    padding-left: 0;
+  }
+  .motto-title > div > img {
+    height: 78px;
+    width: 82px;
+    border: none;
+  }
+  .penguin-card {
+    margin: 0 auto;
+  }
+  .motto {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
